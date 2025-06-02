@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mattéo LAFRAISE - CTO Prochedemoi | IA, Automatisation & SEO</title>
+  <link rel="icon" href="./public/favicon.png" type="image/x-icon">
+  <meta name="description"
+    content="CTO de Prochedemoi, j'aide les TPE/PME à gagner du temps et booster leur visibilité avec des outils intelligents. Créateur de Prochedemoi, pour des commerces plus visibles et connectés.">
+  <meta name="keywords"
+    content="Mattéo LAFRAISE, CTO, Prochedemoi, IA, Automatisation, SEO local, Next.js, TPE, PME, Formations, Développement web">
+  <meta name="author" content="Mattéo LAFRAISE">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#646cff',
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.5s ease-in-out',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+          },
+        },
+      },
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .gradient-bg {
+        background: linear-gradient(90deg, #8553ee 0%, #e05fbb 100%);
+      }
+      .link-hover {
+        transition: transform 0.2s ease-in-out;
+      }
+      .link-hover:hover {
+        transform: translateX(4px);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-white dark:bg-[#111827] transition-colors duration-300">
+  <!-- Theme Toggle -->
+  <div class="absolute top-4 right-4 md:top-8 md:right-8">
+    <button id="themeToggle"
+      class="w-10 h-10 rounded-full bg-gray-100 dark:bg-[#1f2937] flex items-center justify-center transition-colors duration-300">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-500 hidden dark:block" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700 block dark:hidden" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+      </svg>
+    </button>
+  </div>
+
+  <main class="container mx-auto px-4 py-8 max-w-6xl">
+    <!-- Profile Section -->
+    <section class="flex flex-col items-center justify-center text-center mt-12 mb-16 animate-fade-in">
+      <div
+        class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white dark:border-[#1f2937] shadow-lg mb-6">
+        <img src="./public/1742907021206.jpg" alt="Mattéo LAFRAISE" class="w-full h-full object-cover">
+      </div>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">Mattéo LAFRAISE</h1>
+      <h2 id="typing-text" class="text-xl text-primary font-medium mb-4"></h2>
+      <p class="text-gray-600 dark:text-gray-300 max-w-xl leading-relaxed">
+        Je conçois des solutions digitales simples, utiles et automatisées pour les commerces de proximité. Co-fondateur de Prochedemoi.fr, où chaque ligne de code a un impact local.
+      </p>
+    </section>
+
+    <!-- Portfolio Images -->
+    <section class="flex flex-col md:flex-row gap-4 md:gap-6 mb-16 animate-fade-in">
+      <a href="https://formations.prochedemoi.fr"
+        class="w-full md:w-1/2 rounded-xl overflow-hidden shadow-md transition-transform duration-300 hover:shadow-lg">
+        <img src="./public/logo-Qualiopi-1.jpg" alt="Team working together" class="w-full h-full object-cover">
+      </a>
+      <a href="https://prochedemoi.fr"
+        class="w-full md:w-1/2 rounded-xl overflow-hidden shadow-md transition-transform duration-300 hover:shadow-lg">
+        <img src="./public/public.avif" class="w-full h-full object-cover">
+      </a>
+    </section>
+
+    <!-- Links Section -->
+    <section class="max-w-md mx-auto mb-16 animate-fade-in">
+      <a href="https://prochedemoi.fr"
+        class="flex items-center justify-between bg-white dark:bg-[#1f2937] p-4 rounded-lg shadow-md mb-4 transition-all duration-300 hover:shadow-lg link-hover">
+        <div class="flex items-center">
+          <div class="w-10 h-10 flex items-center justify-center text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+            </svg>
+          </div>
+          <span class="ml-3 font-medium text-gray-800 dark:text-gray-200">Site officiel</span>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+
+      <a href="https://instagram.com/prochedemoi"
+        class="flex items-center justify-between bg-white dark:bg-[#1f2937] p-4 rounded-lg shadow-md mb-4 transition-all duration-300 hover:shadow-lg link-hover">
+        <div class="flex items-center">
+          <div class="w-10 h-10 flex items-center justify-center text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <span class="ml-3 font-medium text-gray-800 dark:text-gray-200">Instagram</span>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+
+      <a href="https://www.linkedin.com/in/matteo-lafraise/"
+        class="flex items-center justify-between bg-white dark:bg-[#1f2937] p-4 rounded-lg shadow-md mb-4 transition-all duration-300 hover:shadow-lg link-hover">
+        <div class="flex items-center">
+          <div class="w-10 h-10 flex items-center justify-center text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <span class="ml-3 font-medium text-gray-800 dark:text-gray-200">LinkedIn</span>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+
+      <!-- <a href="#" class="flex items-center justify-between bg-white dark:bg-[#1f2937] p-4 rounded-lg shadow-md mb-4 transition-all duration-300 hover:shadow-lg link-hover">
+        <div class="flex items-center">
+          <div class="w-10 h-10 flex items-center justify-center text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <span class="ml-3 font-medium text-gray-800 dark:text-gray-200">TikTok</span>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a> -->
+
+      <a href="https://formations.prochedemoi.fr"
+        class="flex items-center justify-between gradient-bg p-4 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg link-hover mb-4">
+        <div class="flex items-center">
+          <div class="w-10 h-10 flex items-center justify-center text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+          <span class="ml-3 font-medium text-white">Catalogue de formation</span>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+
+      <a href="#"
+        class="flex items-center justify-between bg-white dark:bg-[#1f2937] p-4 rounded-lg shadow-md mb-4 transition-all duration-300 hover:shadow-lg link-hover">
+        <div class="flex items-center">
+          <div class="w-10 h-10 flex items-center justify-center text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <span class="ml-3 font-medium text-gray-800 dark:text-gray-200">Prendre un RDV</span>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+
+    </section>
+
+    <!-- Testimonials Section -->
+    <!-- Testimonials Section -->
+    <section class="mb-16 animate-fade-in">
+      <div class="bg-gray-50 dark:bg-[#1f2937] rounded-2xl p-8 md:p-10 relative">
+        <h3 class="text-2xl font-bold text-center text-gray-900 dark:text-white mb-8">Ce que disent les gens</h3>
+
+        <div class="relative max-w-2xl mx-auto text-center">
+          <p id="testimonialText"
+            class="text-gray-700 dark:text-gray-300 italic mb-6 text-lg transition-opacity duration-300"></p>
+          <p id="testimonialAuthor" class="font-medium text-gray-900 dark:text-white"></p>
+          <p id="testimonialRole" class="text-sm text-gray-500 dark:text-gray-400 mb-6"></p>
+
+          <div class="flex justify-center gap-1 mb-6" id="dotsContainer"></div>
+
+          <button onclick="prevTestimonial()"
+            class="absolute left-0 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-white dark:bg-[#111827] shadow-md flex items-center justify-center z-10">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600 dark:text-gray-300" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+
+          <button onclick="nextTestimonial()"
+            class="absolute right-0 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-white dark:bg-[#111827] shadow-md flex items-center justify-center z-10">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600 dark:text-gray-300" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const testimonials = [
+        {
+          text: "Matteo est un véritable prodige du développement web. Depuis que nous travaillons ensemble (juin 2024), j'ai pu voir à quel point il maîtrise son sujet avec une aisance impressionnante. Il a cette capacité rare à transformer des idées en solutions digitales performantes, tout en gardant un code propre et efficace. </br> Derrière sa discrétion se cache un esprit affûté, toujours prêt à relever les défis techniques avec brio. Et ce qui ne gâche rien : il a un excellent sens de l'humour et est un collègue avec qui il fait bon travailler au quotidien.  </br> Si vous cherchez un développeur talentueux, efficace et humainement top, Matteo est sans aucun doute la personne qu'il vous faut !",
+          author: "François VROMAN",
+          role: "Formateur"
+        },
+        {
+          text: "Il y a des talents, et puis il y a des forces motrices. Matteo, c'est clairement la deuxième catégorie. </br>Quand il a rejoint l'aventure, ce n'était “qu'un” stage. Très vite, il s'est imposé comme un pilier. Pas pour son code (même si son clavier mérite une médaille), mais pour sa manière de s'approprier un projet. D'y croire. De le porter comme si c'était le sien.  </br>Matteo, c'est cette rare énergie qui transforme les idées en réalité. Il n'attend pas qu'on lui dise quoi faire, il le sent. Il agit. Il aligne l'équipe, défend les choix, pousse le produit… jusqu'à ce qu'on ne puisse plus imaginer le projet sans lui.  </br>C'est cette implication sans faille qui lui a permis de passer de stagiaire à alternant, puis associé. Une évolution naturelle pour quelqu'un qui donne autant, et inspire autant.  </br>Merci Matteo pour tout ce que tu as déjà apporté, et surtout pour ce que tu continues à construire avec nous.",
+          author: "Thom HUYGHE",
+          role: "Co-fondateur de Prochedemoi"
+        },
+      ];
+
+      let currentIndex = 0;
+      const textEl = document.getElementById('testimonialText');
+      const authorEl = document.getElementById('testimonialAuthor');
+      const roleEl = document.getElementById('testimonialRole');
+      const dotsContainer = document.getElementById('dotsContainer');
+
+      function updateTestimonial() {
+        const t = testimonials[currentIndex];
+        textEl.style.opacity = 0;
+        authorEl.style.opacity = 0;
+        roleEl.style.opacity = 0;
+        setTimeout(() => {
+          textEl.innerHTML = `"${t.text}"`;
+          authorEl.innerHTML = `- ${t.author}`;
+          roleEl.textContent = t.role;
+          textEl.style.opacity = 1;
+          authorEl.style.opacity = 1;
+          roleEl.style.opacity = 1;
+          updateDots();
+        }, 200);
+      }
+
+      function updateDots() {
+        dotsContainer.innerHTML = '';
+        testimonials.forEach((_, i) => {
+          const dot = document.createElement('span');
+          dot.className = `w-2 h-2 rounded-full ${i === currentIndex ? 'bg-primary' : 'bg-gray-300 dark:bg-gray-600'}`;
+          dotsContainer.appendChild(dot);
+        });
+      }
+
+      function prevTestimonial() {
+        currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+        updateTestimonial();
+      }
+
+      function nextTestimonial() {
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        updateTestimonial();
+      }
+
+      updateTestimonial();
+    </script>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center animate-fade-in">
+      <a href="mailto:matteo@prochedemoi.fr" class="text-gray-500 dark:text-gray-400 mb-2">matteo@prochedemoi.fr</p>
+      <p class="text-gray-400 dark:text-gray-500 text-sm">© 2025 All rights reserved</p>
+    </footer>
+  </main>
+
+  <script>
+    // Theme Toggle Script
+    const themeToggle = document.getElementById('themeToggle');
+
+    if (localStorage.getItem('theme') === 'dark' ||
+      (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+
+    themeToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+
+      if (document.documentElement.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+      } else {
+        localStorage.setItem('theme', 'light');
+      }
+    });
+
+    // Typing Animation Script
+    const text = "CTO\nIA\u00A0&\u00A0Automatisation\u00A0-\u00A0SEO";
+    const typingElement = document.getElementById('typing-text');
+    let i = 0;
+
+    function typeWriter() {
+      if (i < text.length) {
+        typingElement.innerHTML += text.charAt(i) === '\n' ? '<br>' : text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 100);
+      }
+    }
+
+    // Start typing animation when page loads
+    window.onload = typeWriter;
+  </script>
+</body>
+
+</html>
